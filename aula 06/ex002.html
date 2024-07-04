@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex001</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Manipulação de Dados</h1>
+
+    <script>
+        var n1 = window.prompt("Digite um número:")
+        var n2 = window.prompt("Digite outo número:")
+        var sn = Number.parseInt(n1) + Number.parseInt(n2)
+        window.alert("A soma dos números digitados é: " + sn) //Usando concatenação
+        window.alert(`A soma dos números digitados é: ${sn}`) //Usando template string, tem que usar crase!
+        window.alert(`A soma entre ${n1} e ${n2} é: ${sn}.`)
+    </script>
+</body>
+</html>

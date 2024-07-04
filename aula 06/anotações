@@ -1,0 +1,36 @@
+Existem 3 tipos principais de variável:
+    1 - number
+    2 - string
+    3 - boolean
+
+O sinal + serve para somar ou concatenar
+
+.parseInt() ou parseFloat() serve para converter as variáveis em número.
+
+Para converter uma variável em String.
+    String(variável)
+    variável.toString()
+
+Convertendo as variáveis já no recebimento dos valores
+    var n1 = Number.parseInt(window.prompt("Digite um número:"))
+    var n2 = Number.parseInt(window.prompt("Digite outo número:"))
+    
+    Também posso usar o modo atualizado da linguagem, fazendo o JS interpretar os valores sozinhos
+    var n1 = Number(window.prompt("Digite um número:"))
+    var n2 = Number(window.prompt("Digite outo número:"))
+
+Para que o código reconheça os valores das variáveis como um número e assim realizar a soma, tem que converter de string para número.
+    Number.parseInt(n) para converter em número inteiro
+    Number.parseFloat(n) para converter em número quebrado
+
+Usar crase como aspas, quando for fazer um string template, para fazer um placeholder e facilitar a escrita do código, ao invés
+de fazer concatenação.
+
+s.lenght
+    me retorna quantos caracteres tem a string
+
+s.toUpperCase()
+    transforma tudo em maiúsculo
+
+s.toLoerCase()
+    transforma tudo em minúsculo

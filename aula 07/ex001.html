@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores Lógicos</title>
+    <style>
+        body {
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Operadores Aritméticos e de Atribuição</h1>
+        <h2>Artméticos</h2>
+        <p>adição(+) - subtração(-) - multiplicação(*) - divisão real(/) - resto da divisão inteira(%) - exponencial(** 5²)</p>
+        <p>Ordem de prescedência dos operadores: "()"" > "**"" > "/ * %" > "+ -"</p>
+
+        <h2>Atribuição</h2>
+        <p>"+=" "-=" "*=" "/="</p>
+
+    <h1>Operadores Relacionais, Lógicos e Ternários</h1>
+        <h2>Relacionais</h2>
+        <p>">" "<" ">=" "<=" "==" "!= (diferente)"</p>
+        <p>Usando esses operadores, o resultado será sempre booleano (verdadeiro ou falso).</p>
+
+        <h2>Lógicos</h2>
+        <p>"! (negação)" "&& (conjunção "e")" "|| (disjunção "ou")"</p>
+
+        <h2>Ternários</h2>
+        <p>"?" ":"</p>
+        <p>Dividido em três blocos: TesteLógico:ResultadoSeTrue:ResultadoSefalse</p>
+
+
+        <script>
+            var n1 = Number(5)
+            var n2 = Number(3)
+            var n3 = Number(2)
+            var n4 = Number((5*2)**2)
+            var n5 = Number(5*2**2/2)
+            var n6 = Number(5*2%2/2)
+            var re = Number(n1) + Number(n2)
+            var rs = (Number(n1) + Number(n2)) / Number(n3)
+
+            document.write(`A soma entre ${n1} e ${n2} é ${re}.<br>`)
+            document.write(`A resultado é ${rs}.<br>`)
+            document.write(`A resultado é ${n4}.<br>`)
+            document.write(`A resultado é ${n5}.<br>`)
+            document.write(`A resultado é ${n6}.<br>`)
+        </script>
+</body>
+</html>

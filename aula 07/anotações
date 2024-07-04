@@ -1,0 +1,30 @@
+Operadores:
+    aritméticos
+    atribuição
+    relacionais
+    lógicos
+    ternário
+    typeof
+
+Auto atribuição:
+    É possível dar um valor para uma variável e depois definir um valor somando ela mesma com outro número, repedidamente inclusivamente
+    var n = 3
+    n = n + 4 forma simplificada (n += 4) forma simplificada (n ++ 4)
+    n = n - 2 forma simplificada (n -= 2) forma simplificada (n -- 2)
+    ...
+
+O sinal de igualdade (==) não testa o tipo da variável, apenas se os valores são iguais
+    == é mesmo que "igual"
+O sinal de igualdade restrita (===), esse sim testa além dos valores, o tipo da variável
+    === é o mesmo que "identico"
+
+Operador de negação !
+    Retorna um resultado booleano (verdadeiro ou falso)
+
+Operador de conjunção &&
+    Retorna um resultado dependente do teste lógico, as duas condições precisam apresentar o resultado esperado.
+
+Operador de disjunção ||
+    Retorna um valor independente se o teste lógico foi binário, basta que uma única condição apresente o resultado esperado
+
+O JS sempre fará as coisas nessa ordem: aritmético > relacionais (não ordem, é feito primeiro o que aparece primeiro) > lógico

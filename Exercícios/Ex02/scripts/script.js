@@ -9,8 +9,8 @@ function verificar() {
         var sexo = document.getElementsByName("sexo")
         var idade = ano - Number(nasc.value)
         var genero = ""
-        var img = document.createElement("img")
-        img.setAttribute("id", "foto")
+        var img = document.createElement("img") //isso serve para criar uma tag, quando esta não foi adicionada no próprio arquivo HTML
+        img.setAttribute("id", "foto") //isso serve para atribuir id/class à tag criada acima
         if (sexo[0].checked) {
             genero = "Homem"
             if (idade >= 0 && idade < 10) {

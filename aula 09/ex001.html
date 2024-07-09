@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condições</title>
+    <style>
+        body {
+            background-color: lightblue;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        input#itxtvel {
+            width: 80px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1>Sistema de Multas</h1>
+        <p>Velocidade do carro: <input type="number" name="txtvel" id="itxtvel">Km/h</p>
+        <p><input type="button" value="Verificar" onclick="calcular()"></p>
+        <div id="res"></div>
+    </section>
+    <section>
+        <h1>Verificação de Nacionalidade</h1>
+        <p>Digite seu país: <input type="text" name="pais" id="ipais"></p>
+        <p><input type="button" value="Verificar" onclick="verificar()"></p>
+        <div id="nac"></div>
+    </section>
+
+    <script>
+        function calcular() {
+            var txtv = document.getElementById("itxtvel") //variável que recebe o valor digitado pelo usuário
+            var res = document.getElementById("res") //variável que mostra o valor digitado pelo usuário
+            var vel = Number(txtv.value) //converte o valor digitado pelo usuário em número, se precisar
+            res.innerHTML = `Sua velocidade atual é de <strong>${vel}Km/h</strong>.`
+            if (vel > 60) {
+                res.innerHTML += (`<p>Você ultrapassou o limite de velocidade e foi multado.</p>`)
+            } else {
+                res.innerHTML += (`<p>Você está dentro do limite de velocidade.</p>`)
+            }
+            res.innerHTML += `<p>Dirija sempre com cuidado.</p>`
+        }
+
+        function verificar() {
+            var txtn = document.getElementById("ipais")
+            var nac = document.getElementById("nac")
+            
+            //É preciso colocar um ".value" após a var "txtn" para que o código reconheça o valor e não tag, em caso de string
+            nac.innerHTML = `<p>O país selecionado foi ${txtn.value}.</p>`
+            if (txtn.value == "Brasil") {
+                nac.innerHTML += ("<p>Você é brasileiro.</p>")
+            } else if (txtn.value == "Estados Unidos") {
+                nac.innerHTML += ("<p>Você é americano.</p>")
+            } else {
+                nac.innerHTML += ("<p>Você é estrangeiro.</p>")                
+            }
+        }
+    </script>
+</body>
+</html>

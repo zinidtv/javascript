@@ -1,0 +1,5 @@
+Tipos de condições
+    - Simples
+        Apresenta apenas o bloco do verdadeiro
+    - Composta
+        Apresenta o bloco do verdadeiro e do falso

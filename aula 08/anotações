@@ -1,0 +1,6 @@
+5 maneiras de acessar os elementos do html atravé do DOM
+    - marca: getElementsBayTagName()
+    - ID: getElementById()
+    - nome: getElementsByName()
+    - classe: getElementByClassName()
+    - seletor: querySelector() ou querySelectorAll()

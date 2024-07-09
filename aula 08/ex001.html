@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM (Document Object Model)</title>
+    <style>
+        body {
+            background-color: lightblue;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos</h1>
+    <p name="resultado">Aqui vai o resultado. Aprendendo a usar <strong>DOM</strong> em JavaScript.</p>
+    <p class="teste">Teste</p>
+    <div id="clique">
+        Clique em mim
+    </div>
+
+    <script>
+        //DOM basicamente serve para selecionar os objetos do HTML no JS, permitindo criar interações mais elaboradas entre o usuário/site
+        var p1 = document.getElementsByTagName("p")[0] //selecionar pelo nome da tag
+        var p2 = document.getElementById("clique") //selecionar pelo id da tag
+        var p3 = document.getElementsByClassName("teste") //selecionar pelo nome da class
+        var p4 = document.getElementsByName("resultado") //selecionar pelo name
+        var p5 = document.querySelector("div#clique") //selecionar pela query usando o id
+        var p6 = document.querySelector("p.teste") //selecionar pela query usando a class
+        document.write(p1.innerHTML)
+        //p2.innerText = "Aguarde enquanto carrego suas informações..." //Para alterar o valor de uma variável
+    </script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+variável composta:
+    - array/vetor:
+        - elementos do vetor:
+            - espaço da memória
+            - valor alocado no espaço
+            - índice/chave/key
+                - sempre inicia em 0 (zero)
+            - conteúdo de cada elemento
+Uma array/vetor é uma variável que contém vários elementos, cada elemento é composto por um valor e por uma chave de identificação
+
+Quando usamos o let, a varíavel se torna composta e pode receber mais de um valor.

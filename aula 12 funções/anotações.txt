@@ -1,0 +1,7 @@
+FUNÇÕES
+Funções são ações executadas assim que são chamadas ou em decorrência de algum evento. Ela pode ou não receber parâmteros e retornar um resultado.
+    - toda função precisa ter uma chamada (nome)
+        - precisa ter parâmetros de entrada
+    - uma função pode ter uma ação
+    - uma função pode ter retornos
+    - mas nem toda função precisa ter ação/retornos
